@@ -3,3 +3,6 @@ yarn.lock
 *.log
 .vscode
 todo.txt
+node_modules
+dist
+tsconfig.tsbuildinfo

@@ -3,8 +3,13 @@
   "version": "0.0.0",
   "description": "List of framework agnostic web components",
   "main": "index.js",
+  "module": "index.js",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,5 +28,32 @@
   "bugs": {
     "url": "https://github.com/anandrikka/exploreui-webcomponents/issues"
   },
-  "homepage": "https://github.com/anandrikka/exploreui-webcomponents#readme"
+  "homepage": "https://github.com/anandrikka/exploreui-webcomponents#readme",
+  "devDependencies": {
+    "@open-wc/eslint-config": "^4.3.0"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "@open-wc/eslint-config",
+      "eslint-config-prettier"
+    ],
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error"
+      ],
+      "import/no-unresolved": "off",
+      "import/extensions": [
+        "error",
+        "always",
+        {
+          "ignorePackages": true
+        }
+      ]
+    }
+  }
 }

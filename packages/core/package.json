@@ -2,9 +2,14 @@
   "name": "@exploreui/wc-core",
   "version": "0.0.0",
   "description": "Core libraries required for developing web components",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"   
   },
   "repository": {
     "type": "git",
@@ -20,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/anandrikka/exploreui-webcomponents/issues"
   },
-  "homepage": "https://github.com/anandrikka/exploreui-webcomponents#readme"
+  "homepage": "https://github.com/anandrikka/exploreui-webcomponents#readme",
+  "dependencies": {
+    "lit": "^2.0.0-rc.2"
+  }
 }
