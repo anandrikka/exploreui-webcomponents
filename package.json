@@ -5,9 +5,13 @@
     "packages/*"
   ],
   "scripts": {
-    "install": "lerna exec yarn install",
     "bootstrap": "lerna bootstrap",
-    "build:core": "rimraf packages/core/dist && yarn workspace @exploreui/wc-core build"
+    "build:core": "rimraf packages/core/dist && yarn workspace @exploreui/wc-core build",
+    "format:eslint": "eslint \"**/*.{js,ts}\" --fix",
+    "format:prettier": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --write",
+    "format": "npm run format:eslint && npm run format:prettier",
+    "lint": "eslint \"**/*.{js,ts}\"",
+    "ignore-sync": "ignore-sync ."
   },
   "dependencies": {},
   "devDependencies": {
@@ -15,37 +19,10 @@
     "@typescript-eslint/parser": "^4.26.1",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^6.0.0",
+    "ignore-sync": "^4.0.0",
     "lerna": "^4.0.0",
     "prettier": "^2.3.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.3.2"
-  },
-  "eslintConfig": {
-    "parser": "@typescript-eslint/parser",
-    "extends": [
-      "eslint-config-prettier"
-    ],
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "rules": {
-      "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": [
-        "error"
-      ],
-      "import/no-unresolved": "off",
-      "import/extensions": [
-        "error",
-        "always",
-        {
-          "ignorePackages": true
-        }
-      ]
-    }
-  },
-  "prettier": {
-    "singleQuote": true,
-    "arrowParens": "avoid",
-    "tabWidth": 2
   }
 }

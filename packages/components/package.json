@@ -1,5 +1,5 @@
 {
-  "name": "@exploreui/elements",
+  "name": "@exploreui/wc-elements",
   "version": "0.0.0",
   "description": "List of framework agnostic web components",
   "main": "index.js",
@@ -9,7 +9,11 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "yarn esbuild && yarn ts:declarations",
+    "esbuild": "node scripts/build.cjs",
+    "esbuild:watch": "node scripts/build.cjs --dev",
+    "serve": "concurrently -k -r \"yarn esbuild:watch\" \"wds\"",
+    "ts:declarations": "tsc --emitDeclarationOnly"
   },
   "repository": {
     "type": "git",
@@ -30,30 +34,15 @@
   },
   "homepage": "https://github.com/anandrikka/exploreui-webcomponents#readme",
   "devDependencies": {
-    "@open-wc/eslint-config": "^4.3.0"
+    "@web/dev-server": "^0.1.17",
+    "concurrently": "^6.2.0",
+    "esbuild": "^0.12.8",
+    "globby": "^11.0.3"
   },
-  "eslintConfig": {
-    "parser": "@typescript-eslint/parser",
-    "extends": [
-      "@open-wc/eslint-config",
-      "eslint-config-prettier"
-    ],
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "rules": {
-      "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": [
-        "error"
-      ],
-      "import/no-unresolved": "off",
-      "import/extensions": [
-        "error",
-        "always",
-        {
-          "ignorePackages": true
-        }
-      ]
-    }
+  "dependencies": {
+    "@exploreui/wc-core": "0.0.0"
+  },
+  "exports": {
+    ".": "./index.js"
   }
 }

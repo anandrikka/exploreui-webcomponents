@@ -9,7 +9,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc"   
+    "build": "tsc",
+    "serve": "tsc --watch"
   },
   "repository": {
     "type": "git",

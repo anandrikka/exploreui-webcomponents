@@ -2,7 +2,6 @@
 .cache
 .github
 dist
-packages/**/dist
 node_moduels
 package-lock.json
 yarn.lock
