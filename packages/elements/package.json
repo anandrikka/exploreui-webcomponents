@@ -1,0 +1,27 @@
+{
+  "name": "@exploreui/elements",
+  "version": "0.0.0",
+  "description": "List of framework agnostic web components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandrikka/exploreui-webcomponents.git"
+  },
+  "keywords": [
+    "web",
+    "components",
+    "custom",
+    "components",
+    "lit",
+    "lit-html"
+  ],
+  "author": "Anand Reddy Rikka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anandrikka/exploreui-webcomponents/issues"
+  },
+  "homepage": "https://github.com/anandrikka/exploreui-webcomponents#readme"
+}
