@@ -10,7 +10,8 @@
     "format:eslint": "eslint \"**/*.{js,ts}\" --fix",
     "format:prettier": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --write",
     "format": "npm run format:eslint && npm run format:prettier",
-    "lint": "eslint \"**/*.{js,ts}\""
+    "lint": "eslint \"**/*.{js,ts}\"",
+    "prepare": "husky install"
   },
   "dependencies": {},
   "devDependencies": {
@@ -29,7 +30,7 @@
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "",
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
