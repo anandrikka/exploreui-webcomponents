@@ -5,8 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "build:core": "rimraf packages/core/dist && yarn workspace @exploreui/wc-core build",
+    "clean": "lerna clean",
+    "bootstrap": "yarn install",
+    "build:core": "rimraf packages/core/dist && yarn workspace @exploreui/lit build",
     "format:eslint": "eslint \"**/*.{js,ts}\" --fix",
     "format:prettier": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --write",
     "format": "npm run format:eslint && npm run format:prettier",
