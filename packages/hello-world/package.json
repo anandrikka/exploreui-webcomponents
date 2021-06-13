@@ -1,10 +1,11 @@
 {
-  "name": "@exploreui/wc-hello-word",
+  "name": "@exploreui/lit-hello-world",
   "version": "0.0.0",
   "description": "Hello World Project",
   "main": "index.js",
   "module": "index.js",
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "yarn esbuild && yarn ts:declarations",
     "esbuild": "node build.cjs",
@@ -23,6 +24,6 @@
   },
   "homepage": "https://github.com/anandrikka/%40exploreui-webcomponents#readme",
   "dependencies": {
-    "@exploreui/wc-core": "0.0.0"
+    "@exploreui/lit": "0.0.0"
   }
 }

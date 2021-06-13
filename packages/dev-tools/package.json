@@ -1,5 +1,5 @@
 {
-  "name": "@exploreui/wc-dev-tools",
+  "name": "@exploreui/lit-dev-tools",
   "private": true,
   "version": "0.0.0",
   "description": "Dev tools for development of web components",

@@ -1,4 +1,4 @@
-import { LitElement, html } from '@exploreui/wc-core';
+import { LitElement, html } from '@exploreui/lit';
 
 export class HelloWorldElement extends LitElement {
   render() {

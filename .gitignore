@@ -6,3 +6,4 @@ todo.txt
 node_modules
 dist
 tsconfig.tsbuildinfo
+storybook-static

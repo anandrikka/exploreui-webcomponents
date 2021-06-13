@@ -1,5 +1,5 @@
 {
-  "name": "@exploreui/wc-core",
+  "name": "@exploreui/lit",
   "version": "0.0.0",
   "description": "Core libraries required for developing web components",
   "main": "dist/index.js",

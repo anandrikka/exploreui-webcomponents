@@ -1,0 +1,32 @@
+{
+  "name": "@exploreui/lit-storybook",
+  "version": "0.0.0",
+  "description": "Storybook for custom components build using lit",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
+    "storybook:build": "tsc && build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandrikka/exploreui-webcomponents.git"
+  },
+  "keywords": [
+    "storybook",
+    "lit",
+    "lit-element"
+  ],
+  "author": "Anand Reddy Rikka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anandrikka/exploreui-webcomponents/issues"
+  },
+  "homepage": "https://github.com/anandrikka/exploreui-webcomponents#readme",
+  "dependencies": {
+    "@exploreui/lit": "0.0.0",
+    "@exploreui/lit-hello-world": "0.0.0"
+  },
+  "devDependencies": {
+    "@web/dev-server-storybook": "^0.3.5"
+  }
+}
