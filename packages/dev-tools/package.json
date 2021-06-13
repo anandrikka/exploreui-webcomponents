@@ -1,0 +1,26 @@
+{
+  "name": "@exploreui/wc-dev-tools",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Dev tools for development of web components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandrikka/%40exploreui-webcomponents.git"
+  },
+  "author": "Anand Reddy Rikka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anandrikka/%40exploreui-webcomponents/issues"
+  },
+  "homepage": "https://github.com/anandrikka/%40exploreui-webcomponents#readme",
+  "dependencies": {
+    "@web/dev-server": "^0.1.17",    
+    "concurrently": "^6.2.0",
+    "esbuild": "^0.12.8",
+    "globby": "^11.0.3"   
+  }
+}

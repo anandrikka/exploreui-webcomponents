@@ -28,12 +28,8 @@
   },
   "homepage": "https://github.com/anandrikka/exploreui-webcomponents#readme",
   "dependencies": {
-    "lit": "^2.0.0-rc.2",
-    "@lit-labs/react": "^1.0.0-rc.2"
-  },
-  "exports": {
-    ".": "./dist/index.js",
-    "./element": "./dist/lit/element.js"
-  },
-  "devDependencies": { }
+    "@lit-labs/react": "^1.0.0-rc.2",
+    "lit": "^2.0.0-rc.2"
+  },  
+  "devDependencies": {}
 }

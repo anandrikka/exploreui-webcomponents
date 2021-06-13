@@ -1,0 +1,28 @@
+{
+  "name": "@exploreui/wc-hello-word",
+  "version": "0.0.0",
+  "description": "Hello World Project",
+  "main": "index.js",
+  "module": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "yarn esbuild && yarn ts:declarations",
+    "esbuild": "node build.cjs",
+    "esbuild:watch": "node build.cjs --dev",
+    "serve": "concurrently -k -r \"yarn esbuild:watch\" \"wds --node-resolve --open --watch\"",
+    "ts:declarations": "tsc --emitDeclarationOnly"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandrikka/%40exploreui-webcomponents.git"
+  },
+  "author": "Anand Reddy Rikka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anandrikka/%40exploreui-webcomponents/issues"
+  },
+  "homepage": "https://github.com/anandrikka/%40exploreui-webcomponents#readme",
+  "dependencies": {
+    "@exploreui/wc-core": "0.0.0"
+  }
+}
