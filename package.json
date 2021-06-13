@@ -11,7 +11,8 @@
     "format:prettier": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --write",
     "format": "npm run format:eslint && npm run format:prettier",
     "lint": "eslint \"**/*.{js,ts}\"",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "pre-commit-lint": "yarn lint-staged"
   },
   "dependencies": {},
   "devDependencies": {
