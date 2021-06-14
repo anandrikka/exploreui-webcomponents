@@ -8,7 +8,9 @@
     "dist"
   ],
   "type": "module",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "yarn esbuild && yarn ts:declarations",
     "esbuild": "node build.cjs",
