@@ -1,6 +1,6 @@
 {
   "name": "@exploreui/lit",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "Core libraries required for developing web components",
   "main": "dist/index.js",
   "module": "dist/index.js",

@@ -1,6 +1,6 @@
 {
   "name": "@exploreui/lit-hello-world",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "Hello World Project",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/anandrikka/%40exploreui-webcomponents#readme",
   "dependencies": {
-    "@exploreui/lit": "^0.0.1-alpha.0"
+    "@exploreui/lit": "^0.0.1-alpha.1"
   },
   "exports": {
     ".": "./dist/index.js",
