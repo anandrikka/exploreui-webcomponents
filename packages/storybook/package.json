@@ -1,6 +1,6 @@
 {
   "name": "@exploreui/lit-storybook",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "Storybook for custom components build using lit",
   "private": true,
   "main": "index.js",
