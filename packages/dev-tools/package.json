@@ -1,7 +1,7 @@
 {
   "name": "@exploreui/lit-dev-tools",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "Dev tools for development of web components",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/anandrikka/%40exploreui-webcomponents#readme",
   "dependencies": {
-    "@web/dev-server": "^0.1.17",    
+    "@web/dev-server": "^0.1.17",
     "concurrently": "^6.2.0",
     "esbuild": "^0.12.8",
-    "globby": "^11.0.3"   
+    "globby": "^11.0.3"
   }
 }
