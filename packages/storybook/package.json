@@ -1,6 +1,6 @@
 {
   "name": "@exploreui/lit-storybook",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "Storybook for custom components build using lit",
   "private": true,
   "main": "index.js",
@@ -25,7 +25,7 @@
   "homepage": "https://github.com/anandrikka/exploreui-webcomponents#readme",
   "dependencies": {
     "@exploreui/lit": "^0.0.1-alpha.0",
-    "@exploreui/lit-hello-world": "^0.0.1-alpha.0",
+    "@exploreui/lit-hello-world": "^0.0.1-alpha.1",
     "lit-html": "^1.4.1"
   },
   "devDependencies": {

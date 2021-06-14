@@ -1,6 +1,6 @@
 {
   "name": "@exploreui/lit-hello-world",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "Hello World Project",
   "main": "dist/index.js",
   "module": "dist/index.js",
