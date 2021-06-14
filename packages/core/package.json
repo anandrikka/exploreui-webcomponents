@@ -31,6 +31,9 @@
     "@lit-labs/react": "^1.0.0-rc.2",
     "lit": "^2.0.0-rc.2"
   },
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": "./dist/index.js"
   }
