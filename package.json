@@ -2,12 +2,16 @@
   "name": "@exploreui/webcomponents",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/core",
+    "packages/dev-tools",
+    "packages/storybook",
+    "packages/components/*"
   ],
   "scripts": {
     "clean": "lerna clean",
     "bootstrap": "yarn install",
     "build:core": "rimraf packages/core/dist && yarn workspace @exploreui/lit build",
+    "serve:core": "yarn workspace @exploreui/lit run serve",
     "format:eslint": "eslint \"**/*.{js,ts}\" --fix",
     "format:prettier": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --write",
     "format": "npm run format:eslint && npm run format:prettier",

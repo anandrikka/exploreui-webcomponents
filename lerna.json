@@ -1,6 +1,11 @@
 {
   "npmClient": "yarn",
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/core",
+    "packages/dev-tools",
+    "packages/storybook",
+    "packages/components/*"
+  ],
   "useWorkspaces": true,
   "version": "independent",
   "command": {
