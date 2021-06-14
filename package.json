@@ -10,14 +10,18 @@
   "scripts": {
     "clean": "lerna clean",
     "bootstrap": "yarn install",
-    "build:core": "rimraf packages/core/dist && yarn workspace @exploreui/lit build",
-    "serve:core": "yarn workspace @exploreui/lit run serve",
     "format:eslint": "eslint \"**/*.{js,ts}\" --fix",
     "format:prettier": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --write",
     "format": "npm run format:eslint && npm run format:prettier",
     "lint": "eslint \"**/*.{js,ts}\"",
     "postinstall": "husky install",
-    "pre-commit-lint": "yarn lint-staged"
+    "pre-commit-lint": "yarn lint-staged",
+    "build:core": "rimraf packages/core/dist && yarn workspace @exploreui/lit build",
+    "serve:core": "yarn workspace @exploreui/lit run serve",
+    "build:lit-storybook": "yarn workspace @exploreui/lit-storybook run build",
+    "serve:lit-storybook": "yarn workspace @exploreui/lit-storybook run serve",
+    "build:lit-hello-world": "yarn workspace @exploreui/lit-hello-world run build",
+    "serve:lit-hello-world": "yarn workspace @exploreui/lit-hello-world run serve"
   },
   "dependencies": {},
   "devDependencies": {

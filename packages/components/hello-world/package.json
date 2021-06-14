@@ -2,8 +2,11 @@
   "name": "@exploreui/lit-hello-world",
   "version": "0.0.0",
   "description": "Hello World Project",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "private": true,
   "scripts": {
@@ -25,5 +28,9 @@
   "homepage": "https://github.com/anandrikka/%40exploreui-webcomponents#readme",
   "dependencies": {
     "@exploreui/lit": "0.0.0"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./effect": "./dist/effect.js"
   }
 }

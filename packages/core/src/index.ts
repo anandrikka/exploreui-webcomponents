@@ -16,7 +16,11 @@ export {
   render,
   LitElement,
   defaultConverter,
+  TemplateResult,
+  Template,
 } from 'lit';
+
+export { html as litHtml2 } from 'lit/html.js';
 
 export {
   customElement,
